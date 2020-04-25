@@ -1,0 +1,44 @@
+html {
+    font-family: "yuGothic", sans-serif;
+    box-sizing: border-box;
+}
+
+.header
+{
+   padding-left: 20px;
+  background-color: #1e90ff;  
+  color: white;
+}
+
+.blog_title
+{
+ text-decoration: none;
+ color: white;  
+}
+
+.post
+{
+ list-style: none;
+ color: white;  
+
+}
+
+.contents
+{
+ background-color: #white;  
+ height: calc(100vh - 20px);
+ 
+}
+
+.content_post
+{
+ background-color: #white; 
+ color: black;
+ padding: 20px;
+ overflow: scroll;
+  border: 1px solid #111;
+  margin: 100px;
+  height: 200px;
+}
+
+  
