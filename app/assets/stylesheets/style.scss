@@ -6,39 +6,38 @@ html {
 .header
 {
    padding-left: 20px;
-  background-color: #1e90ff;  
+  background-color: #1e90ff;
   color: white;
 }
 
 .blog_title
 {
  text-decoration: none;
- color: white;  
+ color: white;
 }
 
 .post
 {
  list-style: none;
- color: white;  
+ color: white;
 
 }
 
 .contents
 {
- background-color: #white;  
+ background-color: #white;
  height: calc(100vh - 20px);
- 
+
 }
 
 .content_post
 {
- background-color: #white; 
- color: black;
- padding: 20px;
- overflow: scroll;
-  border: 1px solid #111;
+  padding: 20px;
   margin: 100px;
   height: 200px;
-}
-
-  
+  border-radius: 15px;
+  background: #eeeeee;
+  box-shadow: 19px 19px 38px #e2e2e2, -19px -19px 38px #fafafa;
+  border-radius: 20px;
+  background: #1e90ff;
+  box-shadow: 5px 5px 10px #1a7cdb, -5px -5px 10px #22a4ff;}
