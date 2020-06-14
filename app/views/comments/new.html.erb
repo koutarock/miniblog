@@ -1,6 +1,6 @@
 <h1>投稿詳細ページ</h1>
 <h3><%= @post.user.email %></h3>
-<h3><%= @post.content %></h3>
+<h3><%= @post.text %></h3>
 
 <h2>コメント一覧</h2>
 <% @comments.each do |c| %>
@@ -11,10 +11,12 @@
   </div>
 <% end %>
 
-<%= form_for [@post, @comment] do |f| %>
-  <%= f.text_field :content %>
-  <br>
-  <%= f.submit 'コメントする' %>
-<% end %>
+  <%= form_for [@post, @comment] do |f| %>
+    <%= f.text_field :content %>
+    <br>
+    <%= f.submit 'コメントする' %>
+  <% end %>
+
+
 
 <%= link_to "ホームへ戻る", posts_path %>

@@ -8,9 +8,6 @@ end
 
 
 def new
-    @post = Post.find(params[:id])
-    @comments = @post.comments
-    @comment = Comment.new
   # hello, from sizer.
 end
 
