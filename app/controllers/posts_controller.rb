@@ -8,7 +8,15 @@ end
 
 
 def new
+  # hello, from sizer.
 end
+
+  def show
+    @post = Post.find(params[:id])
+    @comments = @post.comments
+    @comment = Comment.new
+  end
+
 
   def create
     Post.create(text: post_params[:text], user_id: current_user.id)
