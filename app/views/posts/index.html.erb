@@ -11,6 +11,9 @@
             <li>
               <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
             </li>
+                        <li>
+              <%= link_to 'コメント', new_post_comment_path(post), method: :get %>
+            </li>
           </ul>
         </div>
       <% end %>
@@ -19,6 +22,7 @@
       <%= simple_format(post.text) %>
     </div>
   <% end %>
+
                 <%= paginate(@posts) %>
 </div>
 
